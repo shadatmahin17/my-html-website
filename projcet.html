@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        /* Sidebar Styles */
+        .sidebar {
+            background-color: #2c3e50;
+            color: #fff;
+            padding: 20px;
+            flex: 1;
+            min-width: 250px;
+            text-align: center;
+        }
+
+        .sidebar img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #3498db;
+            margin-bottom: 20px;
+        }
+
+        .sidebar h1 {
+            font-size: 1.8em;
+            margin: 10px 0;
+        }
+
+        .sidebar p {
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .sidebar .contact {
+            margin-top: 20px;
+        }
+
+        .sidebar .contact a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .sidebar .contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Main Content Styles */
+        .main-content {
+            flex: 3;
+            padding: 20px;
+            background-color: #fff;
+        }
+
+        .main-content h2 {
+            font-size: 1.8em;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        .main-content .section {
+            margin-bottom: 30px;
+        }
+
+        .main-content .section ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .main-content .section ul li {
+            background-color: #f4f4f4;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-content .section ul li strong {
+            color: #3498db;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .sidebar, .main-content {
+                flex: 100%;
+            }
+
+            .sidebar {
+                text-align: left;
+            }
+
+            .sidebar img {
+                width: 100px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!---sidebar--->
+    <div class="sidebar">
+        <img src="/mahinpic.jpg" alt="Shadat Mahin's Picture">
+        <h1>Shadat Mahin</h1>
+        <p>Textile Engineer</p>
+        <div class="contact">
+            <p>Address: Rampura, Banasree, Dhaka-1219, Bangladesh</p>
+            <p>Phone: 01643711215</p>
+            <p>Email: <a href="mailto:shadatmahin681@gmail.com">shadatmahin681@gmail.com</a></p>
+    </div>
+    </div>
+    </sidebar>
+</body>
+</html>
