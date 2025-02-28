@@ -3,158 +3,283 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Site</title>
-    <!------Style CSS Section------>
+    <title>Portfolio - Shadat Hossain Mahin</title>
     <style>
+        /* General Styles */
         body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            padding: 15px 0;
             text-align: center;
-            background-color: #1a1a2e;
-            color: #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ol {
+            list-style: none;
             padding: 0;
             margin: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
         }
+
+        nav ol li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ol li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: color 0.3s ease, transform 0.3s ease;
+        }
+
+        nav ol li a:hover {
+            color: #ff6347;
+            transform: translateY(-3px);
+        }
+
+        /* Header */
         header {
-            text-align: start;
-            background-color: #16213e;
-            color: #e0e0e0;
-            padding: 20px;
-            border-bottom: 3px solid #0f3460;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-        }
-        footer {
             text-align: center;
-            background-color: #16213e;
-            color: #e0e0e0;
-            padding: 15px;
-            border-top: 3px solid #0f3460;
-            font-size: 0.9rem;
+            padding: 50px 20px;
+            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+            color: #fff;
+            clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+            margin-bottom: 40px;
         }
-        .about-me h1,
-        .Education h1 {
-            color: #e0e0e0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            font-size: 1.8rem;
+
+        header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 5px solid #fff;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 20px 0 10px;
+            font-size: 2.8em;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.3em;
+            font-weight: 300;
+        }
+
+        /* Main Content */
+        main {
+            padding: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        strong {
+            font-size: 1.6em;
+            color: #333;
+            display: block;
             margin-bottom: 15px;
         }
-        header img {
-            width: 100px;
-            height: 100px;
-            border-radius: 50%;
-            border: 3px solid #e0e0e0;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+        p {
+            font-size: 1.1em;
+            color: #555;
+            line-height: 1.8;
         }
-        .about-me,
-        .Education {
-            margin-bottom: 30px;
+
+        ol, ul {
+            padding-left: 20px;
         }
-        .about-me p {
-            font-size: 1.1rem;
-            text-align: justify;
-            margin: 0 10px;
-        }
-        .Education h2 {
-            color: #e0e0e0;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-            font-size: 1.5rem;
+
+        li {
             margin-bottom: 10px;
         }
-        .Education p {
-            font-size: 1rem;
-            margin: 5px 0;
+
+        /* Experience Section */
+        section {
+            margin-top: 30px;
         }
-        .Education article {
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #1a1a2e;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+
+        section h1 {
+            font-size: 2.2em;
+            color: #333;
+            margin-bottom: 15px;
+            font-weight: 700;
         }
-        main {
-            padding: 20px;
-            background-color: #0f3460;
-            margin: 20px auto;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-            max-width: 800px;
+
+        section ul {
+            list-style-type: disc;
         }
+
+        section ul li {
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 50px;
+        }
+
         footer p {
             margin: 0;
+            font-size: 1em;
         }
-        footer a {
-            color: #e0e0e0;
-            text-decoration: none;
+
+        footer form {
+            margin-top: 20px;
+            max-width: 500px;
+            margin: 20px auto;
         }
-        footer a:hover {
-            text-decoration: underline;
+
+        footer form label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            font-size: 1.1em;
         }
-        @media (max-width: 600px) {
-            header {
-                flex-direction: column;
-                text-align: center;
-            }
-            header img {
-                margin-bottom: 10px;
-            }
-            main {
-                margin: 10px;
-                padding: 15px;
-            }
+
+        footer form input, footer form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: border-color 0.3s ease;
+        }
+
+        footer form input:focus, footer form textarea:focus {
+            border-color: #ff6347;
+            outline: none;
+        }
+
+        footer form input[type="submit"] {
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1em;
+            padding: 12px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        footer form input[type="submit"]:hover {
+            background-color: #ff4500;
+            transform: translateY(-3px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        header, main, footer {
+            animation: fadeIn 1s ease-out;
         }
     </style>
 </head>
 <body>
-    <!------Header Section------->
+    <!-- Navigation Bar -->
+    <nav>
+        <ol>
+            <li><a href="https://www.facebook.com/shadat.mahin.919684">Facebook</a></li>
+            <li><a href="https://www.instagram.com/_mahin_photography_/">Instagram</a></li>
+            <li><a href="https://github.com/">Github</a></li>
+        </ol>
+    </nav>
+
+    <!-- Header -->
     <header>
-        <img src="/my-html-website/mahinpic.jpg" alt="Shadat Mahin's Profile Picture">
-        <h1>Shadat Mahin</h1>
+        <img src="mahinpic.jpg" alt="Profile Pic">
+        <h1>Shadat Hossain Mahin</h1>
+        <p>IT Seals & Textile Engineering</p>
     </header>
-    <!------Main Section------->
+
+    <!-- Main Body -->
     <main>
-        <section class="about-me">
-            <h1>About Me</h1>
-            <p>
-                As an Executive - Client Acquisition and Idea & Innovation
-                Secretary, I merge IT expertise with human-centric strategy
-                to fuel growth. My career began in tech and innovation
-                leadership, where I learned to decode patterns of
-                collaboration and creativity into actionable solutions. Now,
-                I drive client acquisition and ideation by connecting
-                visionary businesses with opportunities that blend purpose,
-                technology, and human potential. Let’s build tomorrow’s
-                strategies—where ideas meet impact.
-                <br><br>
-                <em><strong>“Open to innovation challenges and growth-focused
-                partnerships.”</strong></em>
-            </p>
+        <!-- About -->
+        <strong>About Myself</strong>
+        <p>IT Seals and Textile Engineering roles merge technology and engineering to innovate textile processes. IT Seals focus on software and automation, while Textile Engineers optimize materials and production. Both drive efficiency, sustainability, and smart textiles, requiring expertise in engineering, IT, and textile science.</p>
+
+        <!-- Education -->
+        <strong>Education</strong>
+        <ol>
+            <li>
+                <strong>SSC</strong>
+                <p>Result GPA: 5<br>Subject: Science<br>Board: Barishal</p>
+            </li>
+            <li>
+                <strong>HSC</strong>
+                <p>Result GPA: 5<br>Subject: Science<br>Board: Barishal</p>
+            </li>
+            <li>
+                <strong>B.Sc</strong>
+                <p>Result CGPA: 4<br>Subject: Textile Engineering<br>Board: Barishal</p>
+            </li>
+        </ol>
+
+        <!-- Skills -->
+        <strong>Skills</strong>
+        <ol>
+            <li>HTML</li>
+            <li>CSS</li>
+        </ol>
+
+        <!-- Experience -->
+        <section>
+            <h1>Experience</h1>
+            <p>I have been working with <strong>HTML</strong> and <strong>CSS</strong> for over 2 months. During this time, I have developed a strong understanding of web development fundamentals, including:</p>
+            <ul>
+                <li>Creating responsive and mobile-friendly websites.</li>
+                <li>Using semantic HTML5 tags for better structure and accessibility.</li>
+                <li>Styling websites with CSS, including Flexbox and Grid layouts.</li>
+                <li>Implementing animations and transitions to enhance user experience.</li>
+                <li>Debugging and troubleshooting code to ensure cross-browser compatibility.</li>
+            </ul>
+            <p>I have also worked on several projects, including personal portfolios, business websites, and small e-commerce sites. These projects have helped me improve my skills and gain practical experience in web development.</p>
         </section>
-        <section class="Education">
-            <h1>Education</h1>
-            <article>
-                <h2>SSC</h2>
-                <p>GPA: 5</p>
-                <p>Group: Science</p>
-                <p>Barishal Board</p>
-            </article>
-            <article>
-                <h2>HSC</h2>
-                <p>GPA: 5</p>
-                <p>Group: Science</p>
-                <p>Barishal Board</p>
-            </article>
-        </section>
+        <hr>
     </main>
-    <!------Footer Section------->
+
+    <!-- Footer -->
     <footer>
         <p>&copy; 2025 Shadat Mahin. All rights reserved.</p>
-        <p><a href="mailto:shadatmahin681@gmail.com">Contact Me</a></p>
+        <form action="mailto:shadatmahin681@gmail.com" method="post" enctype="text/plain">
+            <h2>Send a Message</h2>
+            <label for="Name">Name</label>
+            <input type="text" id="Name" placeholder="Name" required>
+            <label for="Email">Email</label>
+            <input type="text" id="Email" placeholder="Email" required>
+            <label for="Subject">Subject</label>
+            <input type="text" id="Subject" placeholder="Subject" required>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <input type="submit" value="Send Message">
+        </form>
     </footer>
 </body>
 </html>
-
-
 
 
