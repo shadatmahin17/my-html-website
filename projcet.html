@@ -3,126 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>My Profile</title>
     <style>
-        /* General Styles */
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-            display: flex;
-            flex-wrap: wrap;
+            background-color: #e7e0e0;
         }
-
-        /* Sidebar Styles */
-        .sidebar {
-            background-color: #2c3e50;
-            color: #fff;
+        .profile-container {
+            max-width: 800px;
+            margin: 50px auto;
             padding: 20px;
-            flex: 1;
-            min-width: 250px;
+            background-color: #e0d2d2;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        .profile-header {
             text-align: center;
         }
-
-        .sidebar img {
+        .profile-header img {
+            border-radius: 50%;
             width: 150px;
             height: 150px;
-            border-radius: 50%;
-            border: 4px solid #3498db;
-            margin-bottom: 20px;
+            border: 5px solid #ddd;
         }
-
-        .sidebar h1 {
-            font-size: 1.8em;
+        .profile-header h1 {
             margin: 10px 0;
+            font-size: 2em;
+            color: #333131;
         }
-
-        .sidebar p {
-            font-size: 1em;
-            margin: 5px 0;
-        }
-
-        .sidebar .contact {
+        .profile-content {
             margin-top: 20px;
+            text-align: center;
         }
-
-        .sidebar .contact a {
-            color: #3498db;
-            text-decoration: none;
-            font-weight: bold;
+        .profile-content h2 {
+            color: #181717;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 5px;
         }
-
-        .sidebar .contact a:hover {
+        .profile-content p {
+            line-height: 1.6;
+            color: #282727;
+        }
+        a {
+            color: black;
+            text-decoration:none;
+        }
+        a:hover { 
+            color: brown;
             text-decoration: underline;
-        }
-
-        /* Main Content Styles */
-        .main-content {
-            flex: 3;
-            padding: 20px;
-            background-color: #fff;
-        }
-
-        .main-content h2 {
-            font-size: 1.8em;
-            color: #2c3e50;
-            border-bottom: 2px solid #3498db;
-            display: inline-block;
-            margin-bottom: 10px;
-        }
-
-        .main-content .section {
-            margin-bottom: 30px;
-        }
-
-        .main-content .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .main-content .section ul li {
-            background-color: #f4f4f4;
-            margin: 10px 0;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-        }
-
-        .main-content .section ul li strong {
-            color: #3498db;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .sidebar, .main-content {
-                flex: 100%;
-            }
-
-            .sidebar {
-                text-align: left;
-            }
-
-            .sidebar img {
-                width: 100px;
-                height: 100px;
-            }
         }
     </style>
 </head>
 <body>
-    <!---sidebar--->
-    <div class="sidebar">
-        <img src="/mahinpic.jpg" alt="Shadat Mahin's Picture">
-        <h1>Shadat Mahin</h1>
-        <p>Textile Engineer</p>
-        <div class="contact">
-            <p>Address: Rampura, Banasree, Dhaka-1219, Bangladesh</p>
-            <p>Phone: 01643711215</p>
-            <p>Email: <a href="mailto:shadatmahin681@gmail.com">shadatmahin681@gmail.com</a></p>
-    </div>
-    </div>
-    </sidebar>
+    <section class="profile-container">
+        <section class="profile-header">
+            <img src="mahinpic.jpg" alt="Profile Picture">
+            <h1>Shadat Hossain Mahin</h1>
+            <p>Intern IT Sales & Textile Engineering</p>
+        </section>
+        <section class="profile-content">
+            <h2>About Me</h2>
+            <p><strong><em>IT Seals and Textile Engineering roles merge technology and engineering to innovate textile processes. IT Seals focus on software and automation, while Textile Engineers optimize materials and production. Both drive efficiency, sustainability, and smart textiles, requiring expertise in engineering, IT, and textile science.</em></strong></p>
+            <h2>Contact Information</h2>
+            <p>Email: <a href="mailto:shadatmahin681@gmail.com">shadatmahin</a></p>
+            <p>Phone: 0164127613</p>
+        </section>
+    </section>
 </body>
 </html>
