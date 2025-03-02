@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skils Table</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: antiquewhite;
+            color:aliceblue;
+            margin:0;
+            padding:0 ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        main {
+            width: 100%;
+            max-width: 800px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color:#000;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            color: #000;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            font-size: 16px;
+        }
+        th {
+            background-color: #5cb85c;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>
+            Skills Table
+        </h1>
+        <table border="2", cellpadding="10" , cellspacing="0">
+            <thead>
+            <tr>
+                <th>
+                    Skills
+                </th>
+                <th>
+                    Proficiecny
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    HTML
+                </td>
+                <td>
+                    Intermediate
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    CSS
+                </td>
+                <td>
+                    High
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    JavaScript
+                </td>
+                <td>
+                    Intermediate
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MySQL
+                </td>
+                <td>
+                    Intermediate
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    PHP
+                </td>
+                <td>
+                    Intermediate
+                </td>
+            </tr>
+        </tbody>
+        </table>
+    </main>
+</body>
+</html>

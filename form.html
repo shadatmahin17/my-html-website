@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Form Container */
+        form {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 450px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        form:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Form Title */
+        strong {
+            display: block;
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        /* Labels */
+        label {
+            display: block;
+            font-size: 14px;
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 8px;
+        }
+
+        /* Input Fields */
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            color: #333;
+            background-color: #f9f9f9;
+            transition: border-color 0.3s ease, background-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #5cb85c;
+            background-color: #fff;
+            outline: none;
+        }
+
+        /* Textarea */
+        textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Select Dropdown */
+        select {
+            appearance: none;
+            background: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e") no-repeat right 12px center;
+            background-size: 16px;
+        }
+
+        /* Submit Button */
+        input[type="submit"] {
+            width: 100%;
+            background: #5cb85c;
+            color: #fff;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background: #4cae4c;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            form {
+                padding: 20px;
+            }
+
+            strong {
+                font-size: 24px;
+            }
+
+            input[type="text"],
+            input[type="email"],
+            textarea,
+            select {
+                padding: 10px;
+                font-size: 13px;
+            }
+
+            input[type="submit"] {
+                padding: 12px;
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <form action="https://formspree.io/f/xwpvgqjb" method="post">
+        <strong>Send a Message</strong>
+
+        <label for="Email">Email:</label>
+        <input type="email" id="Email" name="Email" placeholder="Your Email" required>
+
+        <label for="Subject">Subject:</label>
+        <input type="text" id="Subject" name="Subject" placeholder="Subject" required>
+
+        <label for="Skills">Skills:</label>
+        <select name="Skills" id="Skills" required>
+            <option value="" disabled selected>Select a Skill</option>
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JavaScript">JavaScript</option>
+        </select>
+
+        <label for="Message">Message:</label>
+        <textarea name="Message" id="Message" placeholder="Your Message" required></textarea>
+
+        <input type="submit" value="Send Message">
+    </form>
+</body>
+</html>
