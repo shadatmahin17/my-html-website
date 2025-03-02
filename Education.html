@@ -6,38 +6,65 @@
     <title>Education</title>
     <style>
         body {
-            font-family: 'Times New Roman', Times, serif;
-            text-align: center;
-            background-color: rgb(71, 77, 104);
-            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #c1bbd6;
             margin: 0;
-            padding: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
-        header, footer {
-            background-color: rgb(36, 46, 82);
-            color: white;
-            padding: 10px;
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            font-size: 36px;
+            color: #333;
         }
         main {
-            text-align: left;
-            background-color: rgb(29, 37, 60);
-            color: rgb(255, 255, 255);
-            padding: 20px;
-            margin: 20px;
+            width: 100%;
+            max-width: 800px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: #fff;
+            color: #000;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        h1, h2 {
-            margin: 10px 0;
+        th, td {
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            font-size: 16px;
         }
-        p {
+        th {
+            background-color: #5cb85c;
+            color: #fff;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer p {
             margin: 5px 0;
         }
-        a {
-            color: white;
+        footer a {
+            color: #5cb85c;
             text-decoration: none;
         }
-        a:hover {
+        footer a:hover {
             text-decoration: underline;
         }
     </style>
@@ -47,32 +74,60 @@
         <h1><b>Education</b></h1>
     </header>
     <main>
-        <section>
-            <h2><b>SSC</b></h2>
-            <p><ol>
-                <li>GPA: 5</li>
-                <li>Subject: Science</li>
-                <li>Board: Barishal</li>
-            </ol>
-            </p>
-        </section>
-        <section>
-            <h2><b>HSC</b></h2>
-            <p><ol>
-                <li>GPA: 5</li>
-                <li>Subject: Science</li>
-                <li>Board: Barishal</li>
-            </ol>
-        </section>
-        <section>
-            <h2><b>BS.c</b></h2>
-            <p><ol>
-               <li>CGPA: 4.00</li>
-               <li>Subject: BS.c in Textile Engineering</li>
-               <li>University: University of Scholars</li>
-            </ol>
-            </p>
-        </section>
+        <table border="2", cellpadding="10", cellspacing="0">
+                <tr>
+                    <th>Exam</th>
+                    <th>Result</th>
+                    <th>Subject</th>
+                    <th>Borad/University</th>
+                </tr>
+                <tbody>
+                    <tr>
+                       <td>
+                        SSC
+                       </td> 
+                          <td>
+                            GPA:5
+                          </td>
+                          <td>
+                            Science
+                          </td>
+                          <td>
+                            Barishal
+                          </td>   
+                    </tr>
+                    <tr>
+                        <td>
+                         HSC
+                        </td> 
+                           <td>
+                             GPA:5
+                           </td>
+                           <td>
+                             Science
+                           </td>
+                           <td>
+                             Barishal
+                           </td>   
+                     </tr>
+                     <tr>
+                        <td>
+                         BS.c 
+                        </td> 
+                           <td>
+                             GPA:5
+                           </td>
+                           <td>
+                             Textile Engineering
+                           </td>
+                           <td>
+                             University of Scholars
+                           </td>   
+                     </tr>
+                </tbody>
+            </thead>
+        </table>
+       
     </main>
     <footer>
         <p><em></em><a href="mailto:shadatmahin681@gmail.com">shadatmahin681@gmail.com</a></em></p>
