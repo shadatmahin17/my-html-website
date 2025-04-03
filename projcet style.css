@@ -8,6 +8,7 @@
     background-color: #0F1111;
     color: white;
     display: flex;
+    align-items: center;
 }
 
 .nav-logo {
@@ -19,12 +20,38 @@
     background-image: url(image.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
     height: 50px;
-    width: 100%;
+    width: 100px;
 }
 .border {
     border: 1.5px solid transparent;
 }
 .border:hover {
     border: 1.5px solid white;
+}
+
+/** box2 **/
+.ONE {
+   color: white; 
+   font-size: 0.85em;
+   margin-left: 15px;
+}
+
+.address {
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon {
+    display: flex;
+    align-items: center;
+}
+
+/** box3 **/
+
+.nav-search {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
 }
