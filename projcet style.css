@@ -130,3 +130,30 @@
    color: rgb(199, 198, 198);
 }
  
+/* sign in */
+ 
+ .sign-in {
+    height: 50px;
+    width: 130px;
+    text-align: center;
+ }
+
+ .sign-in-text {
+    font-size: 0.85rem;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    margin-right: 10px;
+ }
+
+.account-select{
+   background-color: transparent;
+   color: #ffffff;
+   border: none;
+   font-size: 14px;
+   text-align: center;
+   text-indent: 15px;
+   width: 100%;
+}
+
+ 
