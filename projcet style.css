@@ -101,59 +101,129 @@
 
 .lan {
    display: flex;
-   align-items: center;
-   justify-content: space-evenly;
-   height: 50px;
+   flex-direction: row;
 }
 
 .lan-icon {
-   height: 20px;
-   width: 20px;
-   margin-right: 2px;
+   font-size: 25px;
 }
 
 .lan-text {
    font-size: 0.85rem;
-   color: #cccccc;
 }
 
 .lan-select {
    background-color: transparent;
    border: none;
-   color: #cccccc;
-   text-align: center;
-   font-size: 15px;
+   font-weight: 700;
+   margin-top: 4px;
+   color: white;
 
-}
-
-.lan:hover {
-   color: rgb(199, 198, 198);
 }
  
 /* sign in */
  
- .sign-in {
-    height: 50px;
-    width: 130px;
-    text-align: center;
- }
-
- .sign-in-text {
-    font-size: 0.85rem;
-    color: #ffffff;
-    text-align: center;
-    font-size: 12px;
-    margin-right: 10px;
- }
-
-.account-select{
-   background-color: transparent;
-   color: #ffffff;
-   border: none;
-   font-size: 14px;
-   text-align: center;
-   text-indent: 15px;
-   width: 100%;
+span {
+   font-size: 0.7rem;
+}
+.nav-second {
+   font-size: 0.85rem;
+   font-weight: 700;
 }
 
- 
+/* car */
+
+.nav-cart i {
+   font-size: 35px;
+}
+
+.nav-cart {
+   font-size: 0.85rem;
+   font-weight: 700;
+}
+
+/** panel **/
+
+.panel {
+   height: 40px;
+   background-color: #222f3d;
+   display: flex;
+   color: white;
+   align-items: center;
+   justify-content: space-evenly;
+}
+
+.panel-ops p {
+   display: inline;
+   margin-left: 15px;
+}
+
+.panel-ops {
+   width: 70%;
+   font-size: o.85rem;
+}
+
+.panel-deals {
+   font-size: 0.9rem;
+   font-weight: 700;
+
+}
+
+/* hero section */
+.hero-section {
+   height: 600px;
+   width: 100%;
+   background-image: url('hero Section.jpg');
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   align-items: flex-end;
+   justify-content: center;
+}
+
+.hero-msg {
+   background-color: white;
+   color : black;
+   height: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 0.85rem;
+   width: 80%;
+   margin-bottom: 25px;
+}
+
+.here-msg a {
+   color :#007185;
+}
+
+/** shop section **/
+
+.shop-section {
+   background-color: #cccccc;
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.box {
+   height: 400px;
+   width: 23%;
+   background-color: white;
+   padding: 20px 0px 15px;
+   margin-top: 15px;
+}
+
+.box1-img {
+   height: 300px;
+   width: 100%;
+   background-size:cover;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
+}
+
+.box-content {
+   margin-left: 1rem;
+   margin-right: 1rem;
+   color: #007185;
+
+}
