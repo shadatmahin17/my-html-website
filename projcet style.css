@@ -59,6 +59,7 @@
  
  
  /* search bar */
+ 
  .search-bar {
     display: flex;
     align-items: center;
@@ -83,11 +84,8 @@
     border-bottom-left-radius: 4px;
     font-size: 15px;
     text-indent: 15px;
- 
- 
- 
- 
  }
+
  .search-icon {
     background-color: #febd69;
     height: 100%;
