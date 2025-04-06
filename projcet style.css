@@ -100,24 +100,10 @@
 
 .lan {
   display: flex;
-  flex-direction: row;
-}
-
-.lan-icon {
-  font-size: 25px;
-}
-
-.lan-text {
-  font-size: 0.85rem;
-}
-
-.lan-select {
-  background-color: transparent;
-  border: none;
-  font-weight: 700;
-  margin-top: 4px;
-  color: white;
-
+  align-items: center;
+  gap: 2px;
+  font-weight: 600;
+  margin-left: 15px;
 }
 
 /* sign in */
@@ -271,8 +257,8 @@ span {
 }
 
 .accessories-grid-1 {
-   display: block;
-   unicode-bidi: isolate;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
   gap: 10px;
   margin: 10px;
 }
@@ -287,4 +273,110 @@ span {
   background-position: center;
   margin-bottom: 5px;
   margin-top: 5px;
+}
+
+/* products slider */
+
+.products-slider {
+  background: #fff;
+  margin: 0 30px;
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.products {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.amazon-img {
+  max-width: 200px;
+  max-height: 200px;
+}
+
+.products-slider .products::-webkit-scrollbar {
+  display: none;
+}
+
+/*foot-panel1*/
+
+footer {
+  margin-top: 20px;
+}
+
+.foot-panel1 {
+  background-color: #232f3e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size:0.85rem;
+  height: 50px;
+}
+
+.foot-panel2 {
+  background-color: #222f3d;
+  color: #dddddd;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size:0.85rem;
+  border-top: 0.5px solid white;
+}
+ul a {
+  display: block;
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+ul {
+  margin-top: 20px;
+}
+
+.foot-panel3 {
+  background-color: #222f3d;
+  color:white;
+  border-top: 0.5px solid white;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  background-image: url('Amazon-Logo-White-PNG.png');  
+  background-size: cover;
+  height: 50px;
+  width: 150px;
+}
+
+
+.foot-panel4 {
+  background-color: #222f3d;
+  color:white;
+  height: 80px;
+  font-size: 0.85rem;
+  text-align: center;
+}
+.page {
+  padding: 5px;
+
+}
+
+.copyright {
+  padding: 5px;
+}
+
+a {
+  color: #2162A1;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: #c7511f;
 }
